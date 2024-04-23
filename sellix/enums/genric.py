@@ -7,7 +7,8 @@ class MerchantTier(Enum):
 
     To upgrade to a higher tier, please reach out to us at [sales@sellix.io](mailto:sales@sellix.io) or through our [Discord community](https://sellix.io/discord).
 
-    Ref: [sellix.tier](https://docs.sellix.io/api-reference/errors#general-endpoints)
+    ---
+    Reference: [sellix.tier](https://docs.sellix.io/api-reference/errors#general-endpoints)
     """
 
     STANDARD = "Standard", 5
@@ -39,7 +40,8 @@ class WebHookEvents(Enum):
     """
     A class representing all the `webhook` events.
 
-    Ref: [sellix.webhooks](https://docs.sellix.io/api-reference/webhooks#events)
+    ---
+    Reference: [sellix.webhooks](https://docs.sellix.io/api-reference/webhooks#events)
     """
 
     ORDER_CREATED = "order:created", "The order has been created."
@@ -176,3 +178,21 @@ class WebHookEvents(Enum):
         "Similar to order:paid, this event is the same as its parent.",
     )
     """Event triggered when an order status is updated through a product webhook URL."""
+
+
+class LinkStep(Enum):
+    """
+    A class representing the available step number to be configured on links.
+
+    ---
+    Reference: [sellix.prefilledlinks](https://docs.sellix.io/api-reference/prefilled-links#available-querystring-parameters)
+    """
+
+    DEFAULT_CHECKOUT = 0
+    """The default checkout step (product details)"""
+    GATEWAY_CHOICE = 1
+    """The gateway choice step"""
+    EMAIL_AND_PAY_BUTTON = 3
+    """The email and pay button step"""
+
+

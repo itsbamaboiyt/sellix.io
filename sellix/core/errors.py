@@ -7,7 +7,8 @@ class SellixError(Enum):
 
     These errors may occur during interactions with the Sellix API.
 
-    Ref: [sellix](https://docs.sellix.io/api-reference/errors#types)
+    ---
+    Reference: [sellix.errors](https://docs.sellix.io/api-reference/errors#types)
     """
 
     BAD_REQUEST = "Bad Request - Invalid parameters.", 400
@@ -72,3 +73,116 @@ class SellixError(Enum):
     Represents a rate limit exceeded error with code 429.
     - `RATE_LIMIT_EXCEEDED`: Rate-limiting errors (429) happen when you are sending too many requests to the developers API.
     """
+
+
+class CryptoGateway(Enum):
+    """
+    A class for representing crypto gateways.
+
+    ---
+    Reference: [sellix.paymentmethods](https://docs.sellix.io/api-reference/payment-methods#crypto)
+    """
+
+    Circle_USD = "USDC"
+    """Circle USD gateway."""
+
+    Tether_USD = "USDT"
+    """Tether USD gateway."""
+
+    Pepe = "PEPE"
+    """Pepe gateway."""
+
+    DAI = "DAI"
+    """DAI gateway."""
+
+    Wrapped_Ethereum = "WETH"
+    """Wrapped Ethereum gateway."""
+
+    Ape_Coin = "APE"
+    """Ape Coin gateway."""
+
+    Shiba_Inu = "SHIB"
+    """Shiba Inu gateway."""
+
+    Circle_USD_Native = "USDC_NATIVE"
+    """Circle USD (Native) gateway."""
+
+    Dogecoin = "DOGECOIN"
+    """Dogecoin gateway."""
+
+    Pyth = "PYTH"
+    """Pyth gateway."""
+
+    Bonk = "BONK"
+    """Bonk gateway."""
+
+    Jup = "JUP"
+    """Jup gateway."""
+
+    Jito = "JITO"
+    """Jito gateway."""
+
+    Wen = "WEN"
+    """Wen gateway."""
+
+    Render = "RENDER"
+    """Render gateway."""
+
+    Mobile = "MOBILE"
+    """Mobile gateway."""
+
+    Hnt = "HNT"
+    """Hnt gateway."""
+
+
+class Blockchain(Enum):
+    """
+    A class for representing blockchain techonologies.
+
+    ---
+    ---
+    Reference: [sellix.paymentmethods](https://docs.sellix.io/api-reference/payment-methods#crypto)
+    """
+
+    ERC20 = "ERC20"
+    """Ethereum blockchain."""
+
+    BEP20 = "BEP20"
+    """Binance Smart Chain blockchain."""
+
+    MATIC = "MATIC"
+    """Polygon (formerly Matic) blockchain."""
+
+    SOL = "SOL"
+    """Solana blockchain."""
+
+    TRC20 = "TRC20"
+    """TRON blockchain."""
+
+
+class FiatGateway(Enum):
+    PayPal = (
+        "PAYPAL",
+        "Use PayPal as a payment gateway and its Alternative Payment Methods (APMs)",
+    )
+    """PayPal gateway."""
+
+    Stripe = "STRIPE", "Accept Credit Cards through Stripe"
+    """Stripe gateway."""
+
+    Skrill = "SKRILL", "Use your Business Skrill account"
+    """Skrill gateway."""
+
+    Perfect_Money = "PERFECT_MONEY", "Use your connected Perfect Money account"
+    """Perfect Money gateway."""
+
+    Cash_App = (
+        "CASH_APP",
+        "Use the Sellix Cash App integration to accept Cash App payments",
+    )
+    """Cash App gateway."""
+
+
+class OtherGateway(Enum):
+    Binance_Pay = "BINANCE", "Accept payments through Binance Pay"
+    """Binance Pay gateway."""
