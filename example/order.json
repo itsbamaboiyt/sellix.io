@@ -1,0 +1,721 @@
+{
+    "status": 200,
+    "data": {
+        "order": {
+        "id": 987,
+        "uniqid": "sample-3ddfc9dc3d-ab2e36",
+        "recurring_billing_id": "3c90c3cc-0d44-4b50-8888-8dd25736052a",
+        "payout_configuration": "null",
+        "type": "PRODUCT",
+        "subtype": "SERIALS",
+        "origin": "STOREFRONT",
+        "total": 4.5,
+        "total_display": 2,
+        "product_variants": [
+            {
+            "price": 60,
+            "title": "exampleTitle",
+            "description": "exampleDescription",
+            "price_conversions": {
+                "AUD": 92.08,
+                "BGN": 108.62,
+                "BRL": 300.17,
+                "ZAR": 1143.49,
+                "crypto": {
+                "APE": "31.0607029506",
+                "BCH": "0.1271212408",
+                "BNB": "0.1067436987",
+                "USDC_NATIVE": "60.0000000000"
+                }
+            }
+            }
+        ],
+        "exchange_rate": 1.12,
+        "crypto_exchange_rate": 176.38,
+        "currency": "EUR",
+        "shop_id": 987,
+        "shop_image_name": "ShopImageName.png",
+        "shop_image_storage": "PRODUCTS",
+        "cloudflare_image_id": "sample-c4f1-4f7c-9a1d-89120ed0c800",
+        "name": "Sellix",
+        "customer_email": "customer@gmail.com",
+        "customer_id": "cst_sample86f8ac433f4a084",
+        "affliate_revenue_customer_id": "<string>",
+        "paypal_email_delivery": true,
+        "product_id": "sample2bde8a50",
+        "product_title": "Digital Good",
+        "product_type": "SERIALS",
+        "subscription_id": 123,
+        "subscription_time": 123,
+        "gateway": "LITECOIN",
+        "blockchain": "ERC20",
+        "paypal_apm": "<string>",
+        "stripe_apm": "afterpay_clearpay",
+        "paypal_email": "<string>",
+        "paypal_order_id": "<string>",
+        "paypal_payer_email": "<string>",
+        "paypal_fee": 987,
+        "paypal_subscription_id": 123,
+        "paypal_subscription_link": 123,
+        "lex_order_id": "null",
+        "lex_payment_method": "null",
+        "paydash_paymentID": "null",
+        "virtual_payments_id": "null",
+        "stripe_client_secret": "<string>",
+        "stripe_price_id": "<string>",
+        "skrill_email": "<string>",
+        "skrill_sid": "<string>",
+        "skrill_link": "<string>",
+        "perfectmoney_id": "3c90c3cc-0d44-4b50-8888-8dd25736052a",
+        "binance_invoice_id": "<string>",
+        "binance_qrcode": "<string>",
+        "binance_checkout_url": "<string>",
+        "crypto_address": "3RUx8gs74R5KdXrs8wU6Z2xQkS8jmGVCnTVTRpwSoE3B",
+        "crypto_amount": 0.014174,
+        "crypto_received": 0.014174,
+        "crypto_uri": "solana:3RUx8gs74R5KdXrs8wU6Z2xQkS8jmGVCnTVTRpwSoE3B?amount=0.014174",
+        "crypto_confirmations_needed": 1,
+        "crypto_scheduled_payout": true,
+        "crypto_payout": true,
+        "fee_billed": true,
+        "bill_info": {},
+        "cashapp_qrcode": "<string>",
+        "cashapp_note": "3c90c3cc-0d44-4b50-8888-8dd25736052a",
+        "cashapp_cashtag": "<string>",
+        "country": "IT",
+        "location": "Bologna, Emilia-Romagna (Europe/Rome)",
+        "ip": "255.11.12.255",
+        "is_vpn_or_proxy": true,
+        "user_agent": "PostmanRuntime/7.26.8",
+        "quantity": 5,
+        "coupon_id": "3c90c3cc-0d44-4b50-8888-8dd25736052a",
+        "custom_fields": {
+            "username": "sellix-user"
+        },
+        "developer_invoice": true,
+        "developer_title": "<string>",
+        "developer_webhook": "<string>",
+        "developer_return_url": "<string>",
+        "status": "COMPLETED",
+        "status_details": "CART_PARTIAL_OUT_OF_STOCK",
+        "void_details": "PRODUCT_SOLD_OUT",
+        "discount": 987,
+        "fee_percentage": 5,
+        "fee_breakdown": {
+            "service_fee": {
+            "amount": 0.5,
+            "currency": "EUR",
+            "breakdown": {
+                "flat": {
+                "amount": 0.5,
+                "currency": "EUR"
+                },
+                "percentage": {
+                "plan": "GATEWAY_NO_FEES",
+                "value": "0",
+                "amount": "0",
+                "currency": "EUR"
+                }
+            }
+            },
+            "aml_analysis": {
+            "amount": 1,
+            "currency": "EUR",
+            "breakdown": {
+                "flat": {
+                "amount": "0",
+                "currency": "EUR"
+                },
+                "percentage": {
+                "amount": 50,
+                "currency": "EUR"
+                }
+            }
+            },
+            "platform_fee": {
+            "amount": 1,
+            "currency": "EUR",
+            "breakdown": {
+                "flat": {
+                "amount": 1,
+                "currency": "EUR"
+                },
+                "percentage": {
+                "amount": "0",
+                "currency": "EUR"
+                }
+            }
+            }
+        },
+        "discount_breakdown": {},
+        "day_value": 123,
+        "day": "<string>",
+        "month": "<string>",
+        "year": 123,
+        "product_addons": [
+            {
+            "id": 987,
+            "uniqid": "sample29a0e39d",
+            "shop_id": 987,
+            "product_types": [
+                "<any>"
+            ],
+            "title": "Sellix",
+            "description": "A Sellix product description",
+            "price": "1.00",
+            "currency": "EUR"
+            }
+        ],
+        "bundle_config": [
+            {
+            "id": 1,
+            "uniqid": "sample29a0e39d",
+            "shop_id": 1,
+            "title": "sampleTitle",
+            "products": "PRODUCT_ID_1,PRODUCT_ID_2,PRODUCT_ID_3",
+            "discount_type": "PERCENTAGE",
+            "discount_amount": 25,
+            "updated_at": 162857125819
+            }
+        ],
+        "created_at": 162857125819,
+        "updated_at": 162857125819,
+        "updated_by": 1,
+        "approved_address": {
+            "id": 1,
+            "address": "btcsda312dsad34132dsa",
+            "coin": "BTC",
+            "blockchain": "ERC20",
+            "tx": "txid",
+            "recurring_billing_id": "rec_sample-4caac117ca-abeb80",
+            "allowance": 0.0001,
+            "updated_at": 162857125819,
+            "created_at": 162857125819
+        },
+        "service_text": "<string>",
+        "ip_info": {
+            "success": true,
+            "message": "Success",
+            "fraud_score": 25,
+            "country_code": "IT",
+            "region": "Emilia Romagna",
+            "city": "Bologna",
+            "ISP": "Telecom TIM",
+            "ASN": 308172,
+            "operating_system": "Mac 10.16",
+            "browser": "Chrome 96.0",
+            "organization": "Telecom TIM",
+            "is_crawler": true,
+            "timezone": "Europe/Rome",
+            "mobile": true,
+            "host": "cust.vodafonedsl.it",
+            "proxy": true,
+            "vpn": true,
+            "tor": true,
+            "active_vpn": true,
+            "active_tor": true,
+            "device_brand": "Apple",
+            "device_model": "N/A",
+            "recent_abuse": true,
+            "bot_status": true,
+            "connection_type": "Residential",
+            "abuse_velocity": "none",
+            "zip_code": "N/A",
+            "latitude": 1,
+            "longitude": 2,
+            "request_id": "sampleN0vmX"
+        },
+        "webhooks": [
+            {
+            "uniqid": "sample079ee22",
+            "url": "https://dev.sellix.io/v1/webhook",
+            "event": "order:paid",
+            "retries": 1,
+            "response_code": 200,
+            "created_at": 1640777735,
+            "payload": "{\"sample\":\"sellix\"}",
+            "response": "webhook response"
+            }
+        ],
+        "rewards_data": [
+            {
+            "clause": "<string>",
+            "clause_value": "<string>",
+            "clause_currency": "EUR",
+            "action": "<string>",
+            "action_value": "<string>",
+            "action_currency": "EUR",
+            "action_send_product_variant": "<string>",
+            "created_at": 162857125819,
+            "updated_at": 162857125819,
+            "log": {},
+            "reward_info": {}
+            }
+        ],
+        "paypal_dispute": {
+            "id": "PP-D-sample1379",
+            "invoice_id": "sample-bd73112377-6c0064",
+            "shop_id": 987,
+            "reason": "MERCHANDISE_OR_SERVICE_NOT_RECEIVED",
+            "status": "WAITING_FOR_BUYER_RESPONSE",
+            "outcome": "RESOLVED_BUYER_FAVOUR",
+            "messages": [
+            {
+                "posted_by": "SELLER",
+                "content": "Hello your order is completed",
+                "created_at": 1641033844
+            }
+            ],
+            "life_cycle_stage": "INQUIRY",
+            "seller_response_due_date": 987,
+            "created_at": 162857125819,
+            "updated_at": 162857125819
+        },
+        "product_downloads": [
+            {
+            "id": 1,
+            "invoice_id": "sample-3ddfc9dc3d-ab2e3",
+            "customer_ip": "182.219.207.39",
+            "customer_isp": "WINDTRE",
+            "customer_timezone": "GMT+1",
+            "customer_country": "IT",
+            "created_at": 162857125819
+            }
+        ],
+        "payment_link_id": "<string>",
+        "cashapp_email_configured": true,
+        "license": true,
+        "status_history": [
+            {
+            "id": 10726392,
+            "invoice_id": "sample-3ddfc9dc3d-ab2e36",
+            "status": "PENDING",
+            "details": "The invoice has been created and we are now waiting to receive a payment.",
+            "created_at": 1640777609
+            },
+            {
+            "id": 10726409,
+            "invoice_id": "sample-3ddfc9dc3d-ab2e36",
+            "status": "COMPLETED",
+            "details": "The invoice has been flagged as completed and the product has been shipped.",
+            "created_at": 1640777796
+            }
+        ],
+        "aml_wallets": [
+            {
+            "id": 987,
+            "shop_id": 987,
+            "invoice_id": "sample-3ddfc9dc3d-ab2e36",
+            "origin": "INVOICE",
+            "type": "WALLET",
+            "asset": "holistic",
+            "blockchain": "holistic",
+            "hash": "bc1qvkwfapml56vvweuvvp7tqvurv2w52asv38u5l3",
+            "output_type": "<string>",
+            "output_address": "<string>",
+            "risk_score": "0.156921",
+            "asset_list": [
+                "BTC/bitcoin"
+            ],
+            "error": "<string>",
+            "evaluation_detail": [
+                {
+                "source": [
+                    {
+                    "rule_id": "2a380f72-2dcd-4b90-9467-d3c7b6d25dfb",
+                    "rule_name": "Sanctioned, TF & CSAM",
+                    "risk_score": 0.014195487896676929,
+                    "matched_elements": [
+                        {
+                        "category": "OFAC Sanctioned Entity",
+                        "contributions": [
+                            {
+                            "entity": "Lazarus Group Harmony Horizon Bridge Exploit - June 2022 (suspected post-Exchange)",
+                            "risk_triggers": {
+                                "country": [
+                                "<string>"
+                                ],
+                                "category": "OFAC Sanctioned Entity",
+                                "category_id": "8d39eacf-a5c0-4b38-a101-6b3120b84bf9",
+                                "is_sanctioned": true
+                            },
+                            "contribution_value": {
+                                "usd": 15.554924625314328
+                            },
+                            "contribution_percentage": 0.09531445633497328
+                            }
+                        ]
+                        }
+                    ]
+                    }
+                ]
+                }
+            ],
+            "contributions": {
+                "source": [
+                {
+                    "entities": [
+                    {
+                        "name": "Unknown",
+                        "is_vasp": true,
+                        "actor_id": -4,
+                        "category": "Unknown",
+                        "is_primary_entity": true
+                    }
+                    ],
+                    "contribution_value": {
+                    "usd": 8842.310699142721
+                    },
+                    "contribution_percentage": 54.1822
+                }
+                ],
+                "destination": [
+                {
+                    "entities": [
+                    {
+                        "name": "Kraken",
+                        "is_vasp": true,
+                        "actor_id": 23,
+                        "category": "Exchange",
+                        "is_primary_entity": true
+                    }
+                    ],
+                    "contribution_value": {
+                    "usd": 14645.819876
+                    },
+                    "contribution_percentage": 100
+                }
+                ]
+            },
+            "blockchain_info": {
+                "cluster": {
+                "inflow_value": {
+                    "usd": 16319.573922305124
+                },
+                "outflow_value": {
+                    "usd": 14645.819876
+                }
+                }
+            },
+            "cluster_entities": [
+                {
+                "name": "Unknown",
+                "is_vasp": true,
+                "actor_id": -4,
+                "category": "Unknown",
+                "is_primary_entity": true,
+                "is_after_sanction_date": true
+                }
+            ],
+            "risk_score_detail": {
+                "source": 0.15692119477282407,
+                "destination": 0.15692119477282407
+            },
+            "created_at": 162857125819
+            }
+        ],
+        "crypto_transactions": [
+            {
+            "crypto_amount": 0.014174,
+            "hash": "234dB62Q3X9nyqussRSHW5x9rXe7NzyS3hLcwSTtzd9WLWfrHFUtX4KS6DAMyyHnvRgUNiqUvZdw2T9XWJqa8sPW",
+            "confirmations": 1,
+            "created_at": 1640777734,
+            "updated_at": 1640777734
+            }
+        ],
+        "product": {
+            "id": 987,
+            "uniqid": "sample29a0e39d",
+            "slug": "digital-good-to-download",
+            "shop_id": 987,
+            "type": "SUBSCRIPTION",
+            "subtype": "SERIALS",
+            "title": "Digital good to download",
+            "currency": "EUR",
+            "pay_what_you_want": 1,
+            "price": 4,
+            "price_display": 5,
+            "price_discount": 1,
+            "affiliate_revenue_percent": 15,
+            "price_variants": {},
+            "description": "Product description",
+            "licensing_enabled": 1,
+            "license_period": 7,
+            "image_attachment": {
+            "id": 123,
+            "uniqid": "sample2b21744421e9645ed2abef4d303fd16a30fd4bb32f580d7a615ef6e0c7",
+            "cloudflare_image_id": "sample-c4f1-4f7c-9a1d-89120ed0c800",
+            "storage": "PRODUCTS",
+            "type": "IMAGE",
+            "name": "sample.png",
+            "original_name": "file.png",
+            "extension": "png",
+            "shop_id": 987,
+            "product_id": "sample29a0e39d",
+            "size": 987,
+            "created_at": 162857125819
+            },
+            "file_attachment": "<string>",
+            "youtube_link": "https://www.youtube.com/example",
+            "volume_discounts": [
+            {
+                "type": "PERCENTAGE",
+                "value": 5,
+                "quantity": 10
+            }
+            ],
+            "recurring_interval": "MONTH",
+            "recurring_interval_count": 1,
+            "trial_period": "0",
+            "paypal_product_id": "<string>",
+            "paypal_plan_id": "<string>",
+            "stripe_price_id": "price_sample2X7rAeMb7AM5APEU",
+            "discord_integration": 1,
+            "discord_optional": 1,
+            "discord_set_role": 1,
+            "discord_server_id": "742768752180854827",
+            "discord_role_id": "742772275698335765",
+            "discord_remove_role": "0",
+            "quantity_min": 1,
+            "quantity_max": -1,
+            "quantity_warning": "0",
+            "gateways": [
+            "PAYPAL",
+            "STRIPE",
+            "BITCOIN"
+            ],
+            "custom_fields": [
+            {
+                "type": "checkbox",
+                "name": "Read the ToS",
+                "regex": "<string>",
+                "placeholder": "<string>",
+                "default": "<string>",
+                "required": true
+            }
+            ],
+            "crypto_confirmations_needed": 3,
+            "max_risk_level": 85,
+            "block_vpn_proxies": true,
+            "delivery_text": "Thank you for purchasing this subscription!",
+            "delivery_time": 162857125819,
+            "service_text": "In order to get you services, please contact us at..",
+            "stock_delimiter": ",",
+            "stock": -1,
+            "dynamic_webhook": {},
+            "bestseller": "0",
+            "sort_priority": 1,
+            "unlisted": true,
+            "on_hold": true,
+            "terms_of_service": "<string>",
+            "warranty": 86400,
+            "warranty_text": "This warranty covers..",
+            "watermark_enabled": 1,
+            "watermark_text": "Sellix",
+            "redirect_link": "https://sellix.io",
+            "label_singular": "<string>",
+            "label_plural": "<string>",
+            "private": true,
+            "created_at": 162857125819,
+            "updated_at": 162857125819,
+            "updated_by": 1,
+            "marketplace_category_id": "0",
+            "telegram_group_id": "none",
+            "telegram_integration": 1,
+            "telegram_optional": 1,
+            "name": "Sellix",
+            "image_name": "SellixImageName.png",
+            "image_storage": "PRODUCTS",
+            "cloudflare_image_id": "sample-c4f1-4f7c-9a1d-89120ed0c800",
+            "image_attachments": [
+            {
+                "id": 123,
+                "uniqid": "sample2b21744421e9645ed2abef4d303fd16a30fd4bb32f580d7a615ef6e0c7",
+                "cloudflare_image_id": "sample-c4f1-4f7c-9a1d-89120ed0c800",
+                "storage": "PRODUCTS",
+                "type": "IMAGE",
+                "name": "sample.png",
+                "original_name": "file.png",
+                "extension": "png",
+                "shop_id": 987,
+                "product_id": "sample29a0e39d",
+                "size": 987,
+                "created_at": 162857125819
+            }
+            ],
+            "feedback": {
+            "total": 10,
+            "positive": 8,
+            "neutral": 1,
+            "negative": 1,
+            "numbers": {
+                "1": 1,
+                "3": 1,
+                "4": 2,
+                "5": 6
+            },
+            "list": [
+                {
+                "score": 5,
+                "message": "Nice product!",
+                "reply": "Thank you for the feedback.",
+                "created_at": 162857125819,
+                "updated_at": 162857125819
+                }
+            ]
+            },
+            "categories": [
+            {
+                "title": "Test Category",
+                "uniqid": "sample29a0e39d"
+            }
+            ],
+            "payment_gateways_fees": [
+            {
+                "id": 987,
+                "shop_id": 987,
+                "gateway": "STRIPE",
+                "percent_amount": -5,
+                "fixed_amount": "0",
+                "fixed_currency": "EUR",
+                "active_type": "null",
+                "updated_at": "1970-01-01 00:00:00",
+                "created_at": "1975-02-28 00:00:00"
+            }
+            ],
+            "price_conversions": {
+            "AUD": 92.08,
+            "BGN": 108.62,
+            "BRL": 300.17,
+            "ZAR": 1143.49,
+            "crypto": {
+                "APE": "31.0607029506",
+                "BCH": "0.1271212408",
+                "BNB": "0.1067436987",
+                "USDC_NATIVE": "60.0000000000"
+            }
+            },
+            "country_regulations": "IT",
+            "available_stripe_apm": {
+            "id": "afterpay_clearpay",
+            "name": "Afterpay and Clearpay"
+            },
+            "serials": [],
+            "webhooks": [],
+            "theme": "dark",
+            "dark_mode": 1,
+            "vat_percentage": "0.00",
+            "tax_details": {
+            "vat_percentage": "0.00",
+            "tax_configuration": "NONE",
+            "tax_configuration_data": [],
+            "display_tax_on_storefront": 0,
+            "display_tax_custom_fields": 0,
+            "validation_only_for_companies": 1,
+            "validate_vat_number": 0,
+            "prices_tax_inclusive": 0
+            },
+            "image_attachment_info": {
+            "id": 123,
+            "uniqid": "sample2b21744421e9645ed2abef4d303fd16a30fd4bb32f580d7a615ef6e0c7",
+            "cloudflare_image_id": "sample-c4f1-4f7c-9a1d-89120ed0c800",
+            "storage": "PRODUCTS",
+            "type": "IMAGE",
+            "name": "sample.png",
+            "original_name": "file.png",
+            "extension": "png",
+            "shop_id": 987,
+            "product_id": "sample29a0e39d",
+            "size": 987,
+            "created_at": 162857125819
+            },
+            "average_score": "5.0000",
+            "sold_count": 236,
+            "addons": [
+            {
+                "id": 987,
+                "uniqid": "sample29a0e39d",
+                "shop_id": 987,
+                "product_types": [
+                "<any>"
+                ],
+                "title": "Sellix",
+                "description": "A Sellix product description",
+                "price": "1.00",
+                "currency": "EUR"
+            }
+            ]
+        },
+        "total_conversions": "<any>",
+        "theme": "dark",
+        "dark_mode": 1,
+        "crypto_mode": "<any>",
+        "gateways_available": [
+            "PAYPAL",
+            "STRIPE",
+            "MONERO"
+        ],
+        "country_regulations": "IT",
+        "available_stripe_apm": {
+            "id": "afterpay_clearpay",
+            "name": "Afterpay and Clearpay"
+        },
+        "serials": [
+            "activation-key-#1",
+            "activation-key-#2",
+            "activation-key-#3"
+        ],
+        "shop_payment_gateways_fees": [
+            {
+            "id": 1,
+            "shop_id": 1,
+            "gateway": "PAYPAL",
+            "percent_amount": 3,
+            "fixed_amount": "0",
+            "fixed_currency": "EUR",
+            "active_type": "PERCENT",
+            "updated_at": "1975-02-28 15:05:25",
+            "created_at": "1975-02-28 15:05:25",
+            "conversions": {
+                "AUD": 12.43,
+                "BGN": 14.66,
+                "BRL": 40.52,
+                "ZAR": 154.37,
+                "crypto": {
+                "APE": "0.00435",
+                "BCH": "1.062",
+                "BNB": "1.265",
+                "USDC_NATIVE": "0.00225"
+                }
+            }
+            }
+        ],
+        "shop_paypal_credit_card": true,
+        "shop_force_paypal_email_delivery": true,
+        "shop_walletconnect_id": "<any>",
+        "original_developer_return_url": "/",
+        "rates_snapshot": {
+            "id": 987,
+            "USD": "1.0000",
+            "CAD": "1.3542",
+            "HKD": "7.8269"
+        },
+        "void_times": [
+            {
+            "gateways": [
+                "PAYPAL",
+                "STRIPE",
+                "BITCOIN"
+            ],
+            "conf": {
+                "void": 86400,
+                "wait_period": "null"
+            }
+            }
+        ]
+        }
+    },
+    "error": "<string>",
+    "message": "<string>",
+    "env": "production"
+}
