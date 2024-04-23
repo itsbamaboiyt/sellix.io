@@ -194,5 +194,3 @@ class LinkStep(Enum):
     """The gateway choice step"""
     EMAIL_AND_PAY_BUTTON = 3
     """The email and pay button step"""
-
-
