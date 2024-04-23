@@ -44,7 +44,9 @@ from ..enums.checkables import (
 import msgspec
 
 
-class Shop(msgspec.Struct):
+class Shop(
+    msgspec.Struct
+):
     """
     A class that represents a Sellix `Shop` or `GET self` method on the API.
 
@@ -58,7 +60,9 @@ class Shop(msgspec.Struct):
     user_id: int
     """The ID of the user who requested the shop info"""
 
-    shop_type: ShopType = msgspec.field(name="type")
+    shop_type: ShopType = msgspec.field(
+        name="type"
+    )
     """The type of the shop"""
 
     name: str

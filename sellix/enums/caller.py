@@ -1,7 +1,11 @@
-from enum import Enum
+from enum import (
+    Enum,
+)
 
 
-class Currency(Enum):
+class Currency(
+    Enum
+):
     CANADIAN_DOLLAR = "CAD"
     """Represents the Canadian Currency `dollar` 🇨🇦"""
 
@@ -102,7 +106,9 @@ class Currency(Enum):
     """Represents the Polish Currency `zloty` 🇵🇱"""
 
 
-class DashboardFeature(Enum):
+class DashboardFeature(
+    Enum
+):
     API_CUSTOM = "API_CUSTOM"
     """Represents the organization mode set for the dashboard as API Custom."""
 
@@ -125,7 +131,9 @@ class DashboardFeature(Enum):
     """Represents an unsure state for the organization mode set for the dashboard."""
 
 
-class SortCustomTheme(Enum):
+class SortCustomTheme(
+    Enum
+):
     DEFAULT = "DEFAULT"
     """Default sorting method for the storefront's custom theme."""
 
@@ -142,7 +150,9 @@ class SortCustomTheme(Enum):
     """Sort by type for the storefront's custom theme."""
 
 
-class DefaultSort(Enum):
+class DefaultSort(
+    Enum
+):
     DEFAULT = "DEFAULT"
     """Default sorting method for the storefront."""
 
@@ -159,7 +169,9 @@ class DefaultSort(Enum):
     """Sort by type for the storefront."""
 
 
-class SetupWizard(Enum):
+class SetupWizard(
+    Enum
+):
     NOT_COMPLETED = 0
     """The shop has not completed the setup wizard."""
 
@@ -167,7 +179,9 @@ class SetupWizard(Enum):
     """The shop has completed the setup wizard."""
 
 
-class SetupCryptocurrencies(Enum):
+class SetupCryptocurrencies(
+    Enum
+):
     NOT_SETUP = 0
     """Cryptocurrencies have not been set up for the shop."""
 
@@ -175,7 +189,9 @@ class SetupCryptocurrencies(Enum):
     """Cryptocurrencies have been set up for the shop."""
 
 
-class MarketplaceVerified(Enum):
+class MarketplaceVerified(
+    Enum
+):
     NOT_VERIFIED = 0
     """The shop is not a verified marketplace."""
 
@@ -183,5 +199,7 @@ class MarketplaceVerified(Enum):
     """The shop is a verified marketplace."""
 
 
-class ShopType(Enum):
+class ShopType(
+    Enum
+):
     DEFAULT = "DEFAULT"

@@ -1,7 +1,11 @@
-from enum import Enum
+from enum import (
+    Enum,
+)
 
 
-class MerchantTier(Enum):
+class MerchantTier(
+    Enum
+):
     """
     A class representing all the given tiers according to Sellix.
 
@@ -11,32 +15,46 @@ class MerchantTier(Enum):
     Reference: [sellix.tier](https://docs.sellix.io/api-reference/errors#general-endpoints)
     """
 
-    STANDARD = "Standard", 5
+    STANDARD = (
+        "Standard",
+        5,
+    )
     """
     Standard sellix tier allows general rate-limit of 5 requests, per 10s.
     - `STANDARD`: Represents the standard tier with a value of 5.
     """
 
-    TIER_1 = "Tier 1", 75
+    TIER_1 = (
+        "Tier 1",
+        75,
+    )
     """
     Represents Tier 1 with a rate-limit of 75 requests per 10s.
     - `TIER_1`: Represents Tier 1 with a rate-limit of 75.
     """
 
-    TIER_2 = "Tier 2", 100
+    TIER_2 = (
+        "Tier 2",
+        100,
+    )
     """
     Represents Tier 2 with a rate-limit of 100 requests per 10s.
     - `TIER_2`: Represents Tier 2 with a rate-limit of 100.
     """
 
-    TIER_3 = "Tier 3", 500
+    TIER_3 = (
+        "Tier 3",
+        500,
+    )
     """
     Represents Tier 3 with a rate-limit of 500 requests per 10s.
     - `TIER_3`: Represents Tier 3 with a rate-limit of 500.
     """
 
 
-class WebHookEvents(Enum):
+class WebHookEvents(
+    Enum
+):
     """
     A class representing all the `webhook` events.
 
@@ -44,10 +62,16 @@ class WebHookEvents(Enum):
     Reference: [sellix.webhooks](https://docs.sellix.io/api-reference/webhooks#events)
     """
 
-    ORDER_CREATED = "order:created", "The order has been created."
+    ORDER_CREATED = (
+        "order:created",
+        "The order has been created.",
+    )
     """Event triggered when an order is created."""
 
-    ORDER_UPDATED = "order:updated", "The order status has changed."
+    ORDER_UPDATED = (
+        "order:updated",
+        "The order status has changed.",
+    )
     """Event triggered when the order status is updated."""
 
     ORDER_PARTIAL = (
@@ -74,7 +98,10 @@ class WebHookEvents(Enum):
     )
     """Event triggered when a dispute is opened against an order."""
 
-    PRODUCT_CREATED = "product:created", "A product has been created."
+    PRODUCT_CREATED = (
+        "product:created",
+        "A product has been created.",
+    )
     """Event triggered when a product is created."""
 
     PRODUCT_STOCK = (
@@ -83,7 +110,10 @@ class WebHookEvents(Enum):
     )
     """Event triggered when a product's stock falls below the warning range."""
 
-    PRODUCT_EDITED = "product:edited", "A product has been edited."
+    PRODUCT_EDITED = (
+        "product:edited",
+        "A product has been edited.",
+    )
     """Event triggered when a product is edited."""
 
     PRODUCT_DYNAMIC = (
@@ -92,7 +122,10 @@ class WebHookEvents(Enum):
     )
     """Event issued only for dynamic products."""
 
-    QUERY_CREATED = "query:created", "A query has been created for one of your shops."
+    QUERY_CREATED = (
+        "query:created",
+        "A query has been created for one of your shops.",
+    )
     """Event triggered when a query is created."""
 
     QUERY_REPLIED = (
@@ -119,10 +152,16 @@ class WebHookEvents(Enum):
     )
     """Event triggered when a trial ends for a subscription."""
 
-    SUBSCRIPTION_CREATED = "subscription:created", "A subscription has been created."
+    SUBSCRIPTION_CREATED = (
+        "subscription:created",
+        "A subscription has been created.",
+    )
     """Event triggered when a subscription is created."""
 
-    SUBSCRIPTION_UPDATED = "subscription:updated", "A subscription has been updated."
+    SUBSCRIPTION_UPDATED = (
+        "subscription:updated",
+        "A subscription has been updated.",
+    )
     """Event triggered when a subscription is updated."""
 
     SUBSCRIPTION_RENEWED = (
@@ -180,7 +219,9 @@ class WebHookEvents(Enum):
     """Event triggered when an order status is updated through a product webhook URL."""
 
 
-class LinkStep(Enum):
+class LinkStep(
+    Enum
+):
     """
     A class representing the available step number to be configured on links.
 

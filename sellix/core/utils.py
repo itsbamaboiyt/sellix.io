@@ -1,8 +1,12 @@
-from ..abc.enums import LinkStep
+from ..abc.enums import (
+    LinkStep,
+)
 import typing as t
 
 
-def if_int(value: t.Any) -> bool:
+def if_int(
+    value: t.Any,
+) -> bool:
     """
     Checks if the input value is an integer.
 
@@ -13,10 +17,17 @@ def if_int(value: t.Any) -> bool:
     bool: True if the value is an integer, False otherwise.
     """
 
-    return isinstance(value, int)
+    return isinstance(
+        value,
+        int,
+    )
 
 
-def if_bool(value: t.Any) -> t.Optional[bool]:
+def if_bool(
+    value: t.Any,
+) -> t.Optional[
+    bool
+]:
     """
     Checks if the input value is a boolean representation.
 
@@ -27,9 +38,15 @@ def if_bool(value: t.Any) -> t.Optional[bool]:
         Optional[bool]: True if the value is "true", False if the value is "false", None otherwise.
     """
 
-    if value == "false":
+    if (
+        value
+        == "false"
+    ):
         return False
-    elif value == "true":
+    elif (
+        value
+        == "true"
+    ):
         return True
     else:
         return None
@@ -38,11 +55,28 @@ def if_bool(value: t.Any) -> t.Optional[bool]:
 def generate_prefilled_link(
     domain: str,
     product_slug: str,
-    quantity: t.Optional[int] = None,
-    gateway: t.Optional[str] = None,
-    step: t.Optional[t.Union[t.Literal[0, 1, 3], LinkStep]] = None,
-    email: t.Optional[str] = None,
-    coupon_code: t.Optional[str] = None,
+    quantity: t.Optional[
+        int
+    ] = None,
+    gateway: t.Optional[
+        str
+    ] = None,
+    step: t.Optional[
+        t.Union[
+            t.Literal[
+                0,
+                1,
+                3,
+            ],
+            LinkStep,
+        ]
+    ] = None,
+    email: t.Optional[
+        str
+    ] = None,
+    coupon_code: t.Optional[
+        str
+    ] = None,
 ) -> str:
     """
     Generates a prefilled link for a product with optional parameters.
@@ -62,19 +96,36 @@ def generate_prefilled_link(
 
     link = f"https://{domain}/product/{product_slug}?"
 
-    if quantity is not None:
+    if (
+        quantity
+        is not None
+    ):
         link += f"quantity={quantity}&"
 
-    if gateway is not None:
+    if (
+        gateway
+        is not None
+    ):
         link += f"gateway={gateway}&"
 
-    if step is not None:
+    if (
+        step
+        is not None
+    ):
         link += f"step={step}&"
 
-    if email is not None:
+    if (
+        email
+        is not None
+    ):
         link += f"email={email}&"
 
-    if coupon_code is not None:
+    if (
+        coupon_code
+        is not None
+    ):
         link += f"couponCode={coupon_code}&"
 
-    return link.rstrip("&")
+    return link.rstrip(
+        "&"
+    )
