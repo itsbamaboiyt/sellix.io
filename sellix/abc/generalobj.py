@@ -3,10 +3,7 @@ from ..enums.caller import (
     Currency,
     DashboardFeature,
     SortCustomTheme,
-    DefaultSort,
-    SetupWizard,
-    SetupCryptocurrencies,
-    MarketplaceVerified,
+    DefaultSort
 )
 from ..enums.checkables import (
     DisplayTaxOnStorefront,
@@ -38,6 +35,9 @@ from ..enums.checkables import (
     Verified,
     DescriptionImage,
     DescriptionSkipDefaultImage,
+    SetupWizard,
+    SetupCryptocurrencies,
+    MarketplaceVerified,
 )
 
 
@@ -345,7 +345,29 @@ class Shop(
     """Where the image is stored in Sellix's self-hosted CDN."""
 
     cloudflare_image_id: str
-    """#### New field containing the cloudflare image ID of this product.\nReplaces `image_attachment` and `image_name`.\nFormat\nURL: `https://imagedelivery.net/95QNzrEeP7RU5l5WdbyrKw/<cloudflare_image_id>/<variant_name>` \nWhere `variant_name` can be `shopItem`, `avatar`, `icon`, `imageAvatarFeedback`, `public`, `productImageCart`."""
+    """
+    #### New field containing the cloudflare image ID of this product.
+    Replaces `image_attachment` and `image_name`.
+    Format
+    URL: `https://imagedelivery.net/95QNzrEeP7RU5l5WdbyrKw/<cloudflare_image_id>/<variant_name>`
+    Where `variant_name` can be `shopItem`, `avatar`, `icon`, `imageAvatarFeedback`, `public`, `productImageCart`.
+    """
 
     marketplace_verified: MarketplaceVerified
     """Whether or not the shop is a verified marketplace"""
+
+class Order(msgspec.Struct):
+    id: int
+    """ID of the resource."""
+    
+    uniqid: str
+    """Unique ID of the resource, used as reference across the API."""
+    
+    recurring_billing_id: str
+    """Unique ID of the recurring bill."""
+    
+    payout_configuration: str
+    """`DEPRECATED`"""
+    
+    type: ...
+    

@@ -3,9 +3,7 @@ from enum import (
 )
 
 
-class DisplayTaxOnStorefront(
-    Enum
-):
+class DisplayTaxOnStorefront(Enum):
     DISABLED = 0
     """Tax percentage will not be shown on the product cards of your storefront."""
 
@@ -13,9 +11,7 @@ class DisplayTaxOnStorefront(
     """Tax percentage will be shown on the product cards of your storefront."""
 
 
-class DisplayTaxCustomFields(
-    Enum
-):
+class DisplayTaxCustomFields(Enum):
     DISABLED = 0
     """Tax is not displayed in custom fields."""
 
@@ -23,9 +19,7 @@ class DisplayTaxCustomFields(
     """Tax is displayed in custom fields."""
 
 
-class ValidationOnlyForCompanies(
-    Enum
-):
+class ValidationOnlyForCompanies(Enum):
     DISABLED = 0
     """VAT validation is not done only for companies."""
 
@@ -33,9 +27,7 @@ class ValidationOnlyForCompanies(
     """VAT validation is only done for companies."""
 
 
-class ValidateVatNumber(
-    Enum
-):
+class ValidateVatNumber(Enum):
     DISABLED = 0
     """VAT number validation is disabled."""
 
@@ -43,9 +35,7 @@ class ValidateVatNumber(
     """VAT number validation is enabled."""
 
 
-class PricesTaxInclusive(
-    Enum
-):
+class PricesTaxInclusive(Enum):
     DISABLED = 0
     """Product pricing does not include the VAT."""
 
@@ -53,9 +43,7 @@ class PricesTaxInclusive(
     """Product pricing includes the VAT."""
 
 
-class NotifyTrialEnding(
-    Enum
-):
+class NotifyTrialEnding(Enum):
     DISABLED = 0
     """No email is sent to customers when the trial period is ending."""
 
@@ -63,9 +51,7 @@ class NotifyTrialEnding(
     """An email is sent to customers when the trial period is ending."""
 
 
-class NotifyUpcomingRenewal(
-    Enum
-):
+class NotifyUpcomingRenewal(Enum):
     DISABLED = 0
     """No email is sent to customers before an upcoming renewal."""
 
@@ -73,9 +59,7 @@ class NotifyUpcomingRenewal(
     """An email is sent to customers before an upcoming renewal."""
 
 
-class NotifySubscriptionRenewalFailure(
-    Enum
-):
+class NotifySubscriptionRenewalFailure(Enum):
     DISABLED = 0
     """No email is sent to customers if a subscription renewal fails."""
 
@@ -83,9 +67,7 @@ class NotifySubscriptionRenewalFailure(
     """An email is sent to customers if a subscription renewal fails."""
 
 
-class OrderEmails(
-    Enum
-):
+class OrderEmails(Enum):
     DISABLED = 0
     """Shop owner does not receive emails for orders."""
 
@@ -93,9 +75,7 @@ class OrderEmails(
     """Shop owner receives emails for orders."""
 
 
-class PayPalCreditCard(
-    Enum
-):
+class PayPalCreditCard(Enum):
     DISABLED = 0
     """Shop does not accept credit cards via PayPal."""
 
@@ -103,9 +83,7 @@ class PayPalCreditCard(
     """Shop accepts credit cards via PayPal."""
 
 
-class ForcePaypalEmailDelivery(
-    Enum
-):
+class ForcePaypalEmailDelivery(Enum):
     DISABLED = 0
     """Shop does not deliver products to the PayPal email when the gateway is PAYPAL."""
 
@@ -113,9 +91,7 @@ class ForcePaypalEmailDelivery(
     """Shop delivers products to the PayPal email when the gateway is PAYPAL."""
 
 
-class NonCustodialWallet(
-    Enum
-):
+class NonCustodialWallet(Enum):
     DISABLED = 0
     """The shop does not use the Sellix non-custodial crypto wallet."""
 
@@ -123,9 +99,7 @@ class NonCustodialWallet(
     """The shop uses the Sellix non-custodial crypto wallet."""
 
 
-class DarkMode(
-    Enum
-):
+class DarkMode(Enum):
     DISABLED = 0
     """Dark mode is not enabled for the shop."""
 
@@ -133,9 +107,7 @@ class DarkMode(
     """Dark mode is enabled for the shop."""
 
 
-class SearchEnabled(
-    Enum
-):
+class SearchEnabled(Enum):
     DISABLED = 0
     """Search functionality is disabled for the shop."""
 
@@ -143,9 +115,7 @@ class SearchEnabled(
     """Search functionality is enabled for the shop."""
 
 
-class SortEnabled(
-    Enum
-):
+class SortEnabled(Enum):
     DISABLED = 0
     """Product sorting is disabled for the shop."""
 
@@ -153,9 +123,7 @@ class SortEnabled(
     """Product sorting is enabled for the shop."""
 
 
-class CartEnabled(
-    Enum
-):
+class CartEnabled(Enum):
     DISABLED = 0
     """The cart system is disabled for the shop."""
 
@@ -163,9 +131,7 @@ class CartEnabled(
     """The cart system is enabled for the shop."""
 
 
-class HideOutOfStock(
-    Enum
-):
+class HideOutOfStock(Enum):
     DISABLED = 0
     """Products are not automatically hidden when out of stock."""
 
@@ -173,9 +139,7 @@ class HideOutOfStock(
     """Products are automatically hidden when out of stock."""
 
 
-class CenterProductTitles(
-    Enum
-):
+class CenterProductTitles(Enum):
     DISABLED = 0
     """The shop's theme does not center product titles."""
 
@@ -183,9 +147,7 @@ class CenterProductTitles(
     """The shop's theme centers product titles."""
 
 
-class CenterGroupTitles(
-    Enum
-):
+class CenterGroupTitles(Enum):
     DISABLED = 0
     """The shop's theme does not center group titles."""
 
@@ -193,9 +155,7 @@ class CenterGroupTitles(
     """The shop's theme centers group titles."""
 
 
-class Verified(
-    Enum
-):
+class Verified(Enum):
     NOT_VERIFIED = 0
     """The shop is not verified by Sellix."""
 
@@ -203,9 +163,7 @@ class Verified(
     """The shop is verified by Sellix."""
 
 
-class OnHold(
-    Enum
-):
+class OnHold(Enum):
     NOT_ON_HOLD = 0
     """The shop is not on hold."""
 
@@ -213,9 +171,7 @@ class OnHold(
     """The shop is on hold."""
 
 
-class CustomEmbed(
-    Enum
-):
+class CustomEmbed(Enum):
     NOT_USED = 0
     """The shop does not use a custom embed theme."""
 
@@ -223,9 +179,7 @@ class CustomEmbed(
     """The shop uses a custom embed theme."""
 
 
-class CustomTheme(
-    Enum
-):
+class CustomTheme(Enum):
     NOT_USED = 0
     """The shop does not use a custom storefront theme."""
 
@@ -233,9 +187,7 @@ class CustomTheme(
     """The shop uses a custom storefront theme."""
 
 
-class DescriptionYouTubeOnly(
-    Enum
-):
+class DescriptionYouTubeOnly(Enum):
     DISABLED = 0
     """Both YouTube videos and other types of content are shown for invoice/product description."""
 
@@ -243,9 +195,7 @@ class DescriptionYouTubeOnly(
     """Only YouTube videos are shown for invoice/product description."""
 
 
-class DescriptionSkipDefaultImage(
-    Enum
-):
+class DescriptionSkipDefaultImage(Enum):
     DISABLED = 0
     """Default images are not skipped for product description."""
 
@@ -253,9 +203,7 @@ class DescriptionSkipDefaultImage(
     """Default images are skipped for product description."""
 
 
-class HideStockCounter(
-    Enum
-):
+class HideStockCounter(Enum):
     DISABLED = 0
     """The number of products in stock is displayed."""
 
@@ -263,9 +211,7 @@ class HideStockCounter(
     """Only 'In Stock' or 'Out of Stock' messages are displayed, without showing the exact number of products in stock."""
 
 
-class DescriptionImage(
-    Enum
-):
+class DescriptionImage(Enum):
     NO_DESCRIPTION_IMAGE = 0
     """The shop does not have a description image."""
 
@@ -273,9 +219,7 @@ class DescriptionImage(
     """The shop has a description image."""
 
 
-class HideProductsSold(
-    Enum
-):
+class HideProductsSold(Enum):
     NO_HIDE_PRODUCTS_SOLD = 0
     """The products sold counter is not hidden on the storefront."""
 
@@ -283,11 +227,33 @@ class HideProductsSold(
     """The products sold counter is hidden on the storefront."""
 
 
-class ServiceDateFrom(
-    Enum
-):
+class ServiceDateFrom(Enum):
     REGISTRATION_DATE = "REGISTRATION_DATE"
     """The business starting date is displayed from the day of signing up to Sellix."""
 
     FIRST_SALE = "FIRST_SALE"
     """The business starting date is displayed from the day of the first sale."""
+
+
+class SetupWizard(Enum):
+    NOT_COMPLETED = 0
+    """The shop has not completed the setup wizard."""
+
+    COMPLETED = 1
+    """The shop has completed the setup wizard."""
+
+
+class SetupCryptocurrencies(Enum):
+    NOT_SETUP = 0
+    """Cryptocurrencies have not been set up for the shop."""
+
+    SETUP = 1
+    """Cryptocurrencies have been set up for the shop."""
+
+
+class MarketplaceVerified(Enum):
+    NOT_VERIFIED = 0
+    """The shop is not a verified marketplace."""
+
+    VERIFIED = 1
+    """The shop is a verified marketplace."""

@@ -3,9 +3,7 @@ from enum import (
 )
 
 
-class SellixError(
-    Enum
-):
+class SellixError(Enum):
     """
     A class representing error codes returned by Sellix API.
 
@@ -97,9 +95,7 @@ class SellixError(
     """
 
 
-class CryptoGateway(
-    Enum
-):
+class CryptoGateway(Enum):
     """
     A class for representing crypto gateways.
 
@@ -159,9 +155,7 @@ class CryptoGateway(
     """Hnt gateway."""
 
 
-class Blockchain(
-    Enum
-):
+class Blockchain(Enum):
     """
     A class for representing blockchain techonologies.
 
@@ -186,9 +180,7 @@ class Blockchain(
     """TRON blockchain."""
 
 
-class FiatGateway(
-    Enum
-):
+class FiatGateway(Enum):
     PayPal = (
         "PAYPAL",
         "Use PayPal as a payment gateway and its Alternative Payment Methods (APMs)",
@@ -220,9 +212,7 @@ class FiatGateway(
     """Cash App gateway."""
 
 
-class OtherGateway(
-    Enum
-):
+class OtherGateway(Enum):
     Binance_Pay = (
         "BINANCE",
         "Accept payments through Binance Pay",

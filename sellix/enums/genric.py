@@ -3,9 +3,7 @@ from enum import (
 )
 
 
-class MerchantTier(
-    Enum
-):
+class MerchantTier(Enum):
     """
     A class representing all the given tiers according to Sellix.
 
@@ -52,9 +50,7 @@ class MerchantTier(
     """
 
 
-class WebHookEvents(
-    Enum
-):
+class WebHookEvents(Enum):
     """
     A class representing all the `webhook` events.
 
@@ -219,9 +215,7 @@ class WebHookEvents(
     """Event triggered when an order status is updated through a product webhook URL."""
 
 
-class LinkStep(
-    Enum
-):
+class LinkStep(Enum):
     """
     A class representing the available step number to be configured on links.
 

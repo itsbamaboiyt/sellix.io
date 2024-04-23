@@ -3,9 +3,7 @@ from enum import (
 )
 
 
-class Currency(
-    Enum
-):
+class Currency(Enum):
     CANADIAN_DOLLAR = "CAD"
     """Represents the Canadian Currency `dollar` 🇨🇦"""
 
@@ -106,9 +104,7 @@ class Currency(
     """Represents the Polish Currency `zloty` 🇵🇱"""
 
 
-class DashboardFeature(
-    Enum
-):
+class DashboardFeature(Enum):
     API_CUSTOM = "API_CUSTOM"
     """Represents the organization mode set for the dashboard as API Custom."""
 
@@ -131,9 +127,7 @@ class DashboardFeature(
     """Represents an unsure state for the organization mode set for the dashboard."""
 
 
-class SortCustomTheme(
-    Enum
-):
+class SortCustomTheme(Enum):
     DEFAULT = "DEFAULT"
     """Default sorting method for the storefront's custom theme."""
 
@@ -150,9 +144,7 @@ class SortCustomTheme(
     """Sort by type for the storefront's custom theme."""
 
 
-class DefaultSort(
-    Enum
-):
+class DefaultSort(Enum):
     DEFAULT = "DEFAULT"
     """Default sorting method for the storefront."""
 
@@ -169,37 +161,129 @@ class DefaultSort(
     """Sort by type for the storefront."""
 
 
-class SetupWizard(
-    Enum
-):
-    NOT_COMPLETED = 0
-    """The shop has not completed the setup wizard."""
-
-    COMPLETED = 1
-    """The shop has completed the setup wizard."""
-
-
-class SetupCryptocurrencies(
-    Enum
-):
-    NOT_SETUP = 0
-    """Cryptocurrencies have not been set up for the shop."""
-
-    SETUP = 1
-    """Cryptocurrencies have been set up for the shop."""
-
-
-class MarketplaceVerified(
-    Enum
-):
-    NOT_VERIFIED = 0
-    """The shop is not a verified marketplace."""
-
-    VERIFIED = 1
-    """The shop is a verified marketplace."""
-
-
-class ShopType(
-    Enum
-):
+class ShopType(Enum):
     DEFAULT = "DEFAULT"
+    
+    
+class OrderType(Enum):
+    """
+    Enum representing the invoice type for orders.
+
+    For subscriptions, the invoice type is PRODUCT_SUBSCRIPTION as SUBSCRIPTION is reserved for Sellix-own plans.
+    """
+
+    PRODUCT = "PRODUCT"
+    """
+    Represents an invoice type for a product.
+    """
+
+    SUBSCRIPTION = "SUBSCRIPTION"
+    """
+    Represents an invoice type for a subscription. (Reserved for Sellix-own plans)
+    """
+
+    PUBLIC_REST_API = "PUBLIC_REST_API"
+    """
+    Represents an invoice type for a public REST API.
+    """
+
+    MONTHLY_BILL = "MONTHLY_BILL"
+    """
+    Represents an invoice type for a monthly bill.
+    """
+
+    SHOPPING_CART = "SHOPPING_CART"
+    """
+    Represents an invoice type for a shopping cart.
+    """
+
+    PRODUCT_SUBSCRIPTION = "PRODUCT_SUBSCRIPTION"
+    """
+    Represents an invoice type for a product subscription.
+    """
+
+
+class OrderSubtype(Enum):
+    """
+    Enum representing the product type for orders.
+    """
+
+    SERIALS = "SERIALS"
+    """
+    Represents a product subtype for serials.
+    """
+
+    FILE = "FILE"
+    """
+    Represents a product subtype for files.
+    """
+
+    SERVICE = "SERVICE"
+    """
+    Represents a product subtype for services.
+    """
+
+    DYNAMIC = "DYNAMIC"
+    """
+    Represents a product subtype for dynamic products.
+    """
+
+    INFO_CARD = "INFO_CARD"
+    """
+    Represents a product subtype for information cards.
+    """
+
+    SUBSCRIPTION = "SUBSCRIPTION"
+    """
+    Represents a product subtype for subscriptions.
+    """
+    
+class OrderOrigin(Enum):
+    """
+    Enum representing how the invoice was created.
+    """
+
+    STOREFRONT = "STOREFRONT"
+    """
+    Represents an invoice created through the storefront.
+    """
+
+    API = "API"
+    """
+    Represents an invoice created through the API.
+    """
+
+class ProductType(Enum):
+    """
+    Enum representing the product type for orders.
+    """
+
+    SERIALS = "SERIALS"
+    """
+    Represents a product type for serials.
+    """
+
+    FILE = "FILE"
+    """
+    Represents a product type for files.
+    """
+
+    SERVICE = "SERVICE"
+    """
+    Represents a product type for services.
+    """
+
+    DYNAMIC = "DYNAMIC"
+    """
+    Represents a product type for dynamic products.
+    """
+
+    INFO_CARD = "INFO_CARD"
+    """
+    Represents a product type for information cards.
+    """
+
+    SUBSCRIPTION = "SUBSCRIPTION"
+    """
+    Represents a product type for subscriptions.
+    """
