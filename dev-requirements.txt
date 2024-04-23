@@ -1,0 +1,4 @@
+mypy
+codespell
+ruff
+flake8
