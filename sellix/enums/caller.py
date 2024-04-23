@@ -2,110 +2,103 @@ from enum import Enum
 
 
 class Currency(Enum):
-    """
-    Class that represents a currecny.
-
-    ---
-    Reference: [sellix.get_self](https://docs.sellix.io/api-reference/information/get-self)
-    """
-
-    CAD = "Canadian Dollar"
+    CANADIAN_DOLLAR = "CAD"
     """Represents the Canadian Currency `dollar` 🇨🇦"""
 
-    HKD = "Hong Kong Dollar"
+    HONG_KONG_DOLLAR = "HKD"
     """Represents the Hong Kong Currency `dollar` 🇭🇰"""
 
-    ISK = "Icelandic Króna"
+    ICELANDIC_KRONA = "ISK"
     """Represents the Icelandic Currency `króna` 🇮🇸"""
 
-    PHP = "Philippine Peso"
+    PHILIPPINE_PESO = "PHP"
     """Represents the Philippine Currency `peso` 🇵🇭"""
 
-    DKK = "Danish Krone"
+    DANISH_KRONE = "DKK"
     """Represents the Danish Currency `krone` 🇩🇰"""
 
-    HUF = "Hungarian Forint"
+    HUNGARIAN_FORINT = "HUF"
     """Represents the Hungarian Currency `forint` 🇭🇺"""
 
-    CZK = "Czech Koruna"
+    CZECH_KORUNA = "CZK"
     """Represents the Czech Currency `koruna` 🇨🇿"""
 
-    GBP = "British Pound Sterling"
+    BRITISH_POUND_STERLING = "GBP"
     """Represents the British Currency `pound sterling` 🇬🇧"""
 
-    RON = "Romanian Leu"
+    ROMANIAN_LEU = "RON"
     """Represents the Romanian Currency `leu` 🇷🇴"""
 
-    SEK = "Swedish Krona"
+    SWEDISH_KRONA = "SEK"
     """Represents the Swedish Currency `krona` 🇸🇪"""
 
-    IDR = "Indonesian Rupiah"
+    INDONESIAN_RUPIAH = "IDR"
     """Represents the Indonesian Currency `rupiah` 🇮🇩"""
 
-    INR = "Indian Rupee"
+    INDIAN_RUPEE = "INR"
     """Represents the Indian Currency `rupee` 🇮🇳"""
 
-    BRL = "Brazilian Real"
+    BRAZILIAN_REAL = "BRL"
     """Represents the Brazilian Currency `real` 🇧🇷"""
 
-    RUB = "Russian Ruble"
+    RUSSIAN_RUBLE = "RUB"
     """Represents the Russian Currency `ruble` 🇷🇺"""
 
-    HRK = "Croatian Kuna"
+    CROATIAN_KUNA = "HRK"
     """Represents the Croatian Currency `kuna` 🇭🇷"""
 
-    JPY = "Japanese Yen"
+    JAPANESE_YEN = "JPY"
     """Represents the Japanese Currency `yen` 🇯🇵"""
 
-    THB = "Thai Baht"
+    THAI_BAHT = "THB"
     """Represents the Thai Currency `baht` 🇹🇭"""
 
-    CHF = "Swiss Franc"
+    SWISS_FRANC = "CHF"
     """Represents the Swiss Currency `franc` 🇨🇭"""
 
-    EUR = "Euro"
+    EURO = "EUR"
     """Represents the European Currency `euro` 🇪🇺"""
 
-    MYR = "Malaysian Ringgit"
+    MALAYSIAN_RINGGIT = "MYR"
     """Represents the Malaysian Currency `ringgit` 🇲🇾"""
 
-    BGN = "Bulgarian Lev"
+    BULGARIAN_LEV = "BGN"
     """Represents the Bulgarian Currency `lev` 🇧🇬"""
 
-    TRY = "Turkish Lira"
+    TURKISH_LIRA = "TRY"
     """Represents the Turkish Currency `lira` 🇹🇷"""
 
-    CNY = "Chinese Yuan"
+    CHINESE_YUAN = "CNY"
     """Represents the Chinese Currency `yuan` 🇨🇳"""
 
-    NOK = "Norwegian Krone"
+    NORWEGIAN_KRONE = "NOK"
     """Represents the Norwegian Currency `krone` 🇳🇴"""
 
-    NZD = "New Zealand Dollar"
+    NEW_ZEALAND_DOLLAR = "NZD"
     """Represents the New Zealand Currency `dollar` 🇳🇿"""
 
-    ZAR = "South African Rand"
+    SOUTH_AFRICAN_RAND = "ZAR"
     """Represents the South African Currency `rand` 🇿🇦"""
 
-    USD = "United States Dollar"
+    UNITED_STATES_DOLLAR = "USD"
     """Represents the United States Currency `dollar` 🇺🇸"""
 
-    MXN = "Mexican Peso"
+    MEXICAN_PESO = "MXN"
     """Represents the Mexican Currency `peso` 🇲🇽"""
 
-    SGD = "Singapore Dollar"
+    SINGAPORE_DOLLAR = "SGD"
     """Represents the Singapore Currency `dollar` 🇸🇬"""
 
-    AUD = "Australian Dollar"
+    AUSTRALIAN_DOLLAR = "AUD"
     """Represents the Australian Currency `dollar` 🇦🇺"""
 
-    ILS = "Israeli New Shekel"
+    ISRAELI_NEW_SHEKEL = "ILS"
     """Represents the Israeli Currency `new shekel` 🇮🇱"""
 
-    KRW = "South Korean Won"
+    SOUTH_KOREAN_WON = "KRW"
     """Represents the South Korean Currency `won` 🇰🇷"""
 
-    PLN = "Polish Zloty"
+    POLISH_ZLOTY = "PLN"
     """Represents the Polish Currency `zloty` 🇵🇱"""
 
 
@@ -180,3 +173,15 @@ class SetupCryptocurrencies(Enum):
 
     SETUP = 1
     """Cryptocurrencies have been set up for the shop."""
+
+
+class MarketplaceVerified(Enum):
+    NOT_VERIFIED = 0
+    """The shop is not a verified marketplace."""
+
+    VERIFIED = 1
+    """The shop is a verified marketplace."""
+
+
+class ShopType(Enum):
+    DEFAULT = "DEFAULT"

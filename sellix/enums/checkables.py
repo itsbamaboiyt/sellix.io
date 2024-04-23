@@ -176,9 +176,6 @@ class CustomEmbed(Enum):
     ENABLED = 1
     """The shop uses a custom embed theme."""
 
-    NULL = None
-    """No value is set for custom embed."""
-
 
 class CustomTheme(Enum):
     NOT_USED = 0
@@ -186,9 +183,6 @@ class CustomTheme(Enum):
 
     ENABLED = 1
     """The shop uses a custom storefront theme."""
-
-    NULL = None
-    """No value is set for custom theme."""
 
 
 class DescriptionYouTubeOnly(Enum):
