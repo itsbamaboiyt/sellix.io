@@ -258,3 +258,10 @@ class MarketplaceVerified(Enum):
     VERIFIED = 1
     """The shop is a verified marketplace."""
     
+class DarkMode(Enum):
+    dark_mode_disabled = 0
+    """The dark mode is disabled"""
+
+    dark_mode_enabled = 1
+    """The dark mode is enabled"""
+    

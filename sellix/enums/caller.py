@@ -287,3 +287,374 @@ class ProductType(Enum):
     """
     Represents a product type for subscriptions.
     """
+class Gateway(Enum):
+    """
+    Enum representing the gateway for orders.
+    """
+
+    PAYPAL = "PAYPAL"
+    """
+    Represents a gateway for paypal.
+    """
+
+    STRIPE = "STRIPE"
+    """
+    Represents a gateway for stripe.
+    """
+
+    SKRILL = "SKRILL"
+    """
+    Represents a gateway for SKRILL.
+    """
+
+    PERFECT_MONEY = "PERFECT_MONEY"
+    """
+    Represents a gateway for Perfect Money.
+    """
+
+    CASH_APP = "CASH_APP"
+    """
+    Represents a gateway for Cash App.
+    """
+
+    BINANCE = "BINANCE"
+    """
+    Represents a gateway for Binance.
+    """
+
+    BITCOIN = "BITCOIN"
+    """
+    Represents a gateway for Bitcoin.
+    """
+
+    LITECOIN = "LITECOIN"
+    """
+    Represents a gateway for Litecoin.
+    """
+
+    ETHEREUM = "ETHEREUM"
+    """
+    Represents a gateway for Ethereum.
+    """
+
+    BITCOIN_CASH = "BITCOIN_CASH"
+    """
+    Represents a gateway for Bitcoin Cash.
+    """
+
+    NANO = "NANO"
+    """
+    Represents a gateway for Nano.
+    """
+
+    MONERO = "MONERO"
+    """
+    Represents a gateway for Monero.
+    """
+
+    SOLANA = "SOLANA"
+    """
+    Represents a gateway for Solana.
+    """
+
+    RIPPLE = "RIPPLE"
+    """
+    Represents a gateway for Ripple.
+    """
+
+    BINANCE_COIN = "BINANCE_COIN"
+    """
+    Represents a gateway for Binance Coin.
+    """
+
+    USDC = "USDC"
+    """
+    Represents a gateway for USD Coin (USDC).
+    """
+
+    USDT = "USDT"
+    """
+    Represents a gateway for Tether (USDT).
+    """
+
+    TRON = "TRON"
+    """
+    Represents a gateway for TRON.
+    """
+
+    BITCOIN_LN = "BITCOIN_LN"
+    """
+    Represents a gateway for Lightning Network Bitcoin.
+    """
+
+    CONCORDIUM = "CONCORDIUM"
+    """
+    Represents a gateway for Concordium.
+    """
+
+    POLYGON = "POLYGON"
+    """
+    Represents a gateway for Polygon.
+    """
+
+    PEPE = "PEPE"
+    """
+    Represents a gateway for Pepe.
+    """
+
+    DAI = "DAI"
+    """
+    Represents a gateway for Dai.
+    """
+
+    WETH = "WETH"
+    """
+    Represents a gateway for Wrapped Ethereum (WETH).
+    """
+
+    APE = "APE"
+    """
+    Represents a gateway for Ape.
+    """
+
+    SHIB = "SHIB"
+    """
+    Represents a gateway for Shiba Inu (SHIB).
+    """
+
+    USDC_NATIVE = "USDC_NATIVE"
+    """
+    Represents a gateway for Native USD Coin (USDC).
+    """
+
+    DOGECOIN = "DOGECOIN"
+    """
+    Represents a gateway for Dogecoin.
+    """
+
+    PYTH = "PYTH"
+    """
+    Represents a gateway for Pyth.
+    """
+
+    BONK = "BONK"
+    """
+    Represents a gateway for Bonk.
+    """
+
+    JUP = "JUP"
+    """
+    Represents a gateway for Jupiter.
+    """
+
+    JITO = "JITO"
+    """
+    Represents a gateway for Jito.
+    """
+
+    WEN = "WEN"
+    """
+    Represents a gateway for Wen.
+    """
+
+    RENDER = "RENDER"
+    """
+    Represents a gateway for Render.
+    """
+
+    MOBILE = "MOBILE"
+    """
+    Represents a gateway for Mobile payments.
+    """
+
+    HNT = "HNT"
+    """
+    Represents a gateway for Helium (HNT).
+    """
+    
+class Blockchain(Enum):
+    """
+    Enum representing the blockchain for orders.
+    """
+
+    ERC20 = "ERC20"
+    """
+    Represents a blockchain for ERC20 tokens.
+    """
+
+    BEP20 = "BEP20"
+    """
+    Represents a blockchain for BEP20 tokens.
+    """
+
+    TRC20 = "TRC20"
+    """
+    Represents a blockchain for TRC20 tokens.
+    """
+
+    MATIC = "MATIC"
+    """
+    Represents a blockchain for Polygon (formerly Matic).
+    """
+
+    SOL = "SOL"
+    """
+    Represents a blockchain for Solana.
+    """
+   
+class StripeAPM(Enum):
+    """
+    Enum representing alternative payment methods for Stripe.
+    """
+
+    AFTERPAY_CLEARPAY = "AFTERPAY_CLEARPAY"
+    """
+    Represents an alternative payment method for Afterpay/Clearpay.
+    """
+
+    ALIPAY = "ALIPAY"
+    """
+    Represents an alternative payment method for Alipay.
+    """
+
+    BANCONTACT = "BANCONTACT"
+    """
+    Represents an alternative payment method for Bancontact.
+    """
+
+    AU_BECS_DEBIT = "AU_BECS_DEBIT"
+    """
+    Represents an alternative payment method for AU BECS Debit.
+    """
+
+    BOLETO = "BOLETO"
+    """
+    Represents an alternative payment method for Boleto.
+    """
+
+    EPS = "EPS"
+    """
+    Represents an alternative payment method for EPS.
+    """
+
+    FPX = "FPX"
+    """
+    Represents an alternative payment method for FPX.
+    """
+
+    GIROPAY = "GIROPAY"
+    """
+    Represents an alternative payment method for Giropay.
+    """
+
+    GRABPAY = "GRABPAY"
+    """
+    Represents an alternative payment method for GrabPay.
+    """
+
+    IDEAL = "IDEAL"
+    """
+    Represents an alternative payment method for iDEAL.
+    """
+
+    KLARNA = "KLARNA"
+    """
+    Represents an alternative payment method for Klarna.
+    """
+
+    OXXO = "OXXO"
+    """
+    Represents an alternative payment method for OXXO.
+    """
+
+    P24 = "P24"
+    """
+    Represents an alternative payment method for P24.
+    """
+
+    SOFORT = "SOFORT"
+    """
+    Represents an alternative payment method for Sofort.
+    """
+
+    WECHAT_PAY = "WECHAT_PAY"
+    """
+    Represents an alternative payment method for WeChat Pay.
+    """
+
+class Status(Enum):
+    """
+    Enum representing the status of an order.
+    """
+
+    PENDING = "PENDING"
+    """
+    Represents a pending order status.
+    """
+
+    COMPLETED = "COMPLETED"
+    """
+    Represents a completed order status.
+    """
+
+    VOIDED = "VOIDED"
+    """
+    Represents a voided order status.
+    """
+
+    WAITING_FOR_CONFIRMATIONS = "WAITING_FOR_CONFIRMATIONS"
+    """
+    Represents an order status waiting for confirmations.
+    """
+
+    PARTIAL = "PARTIAL"
+    """
+    Represents a partial order status.
+    """
+
+    CUSTOMER_DISPUTE_ONGOING = "CUSTOMER_DISPUTE_ONGOING"
+    """
+    Represents an order status with an ongoing customer dispute.
+    """
+
+    REVERSED = "REVERSED"
+    """
+    Represents a reversed order status.
+    """
+
+    REFUNDED = "REFUNDED"
+    """
+    Represents a refunded order status.
+    """
+
+    WAITING_SHOP_ACTION = "WAITING_SHOP_ACTION"
+    """
+    Represents an order status waiting for shop action.
+    """
+
+    PROCESSING = "PROCESSING"
+    """
+    Represents a processing order status.
+    """
+
+class STAT_DETAILS(Enum):
+    """
+    Enum representing the status_details of an order.
+    """
+    STATUS_DETAILS = "STATUS_DETAILS"
+    """
+    Represents status details.
+    """
+
+class VOID_DETAILS(Enum):
+    """
+    Enum representing the void_details of an order.
+    """
+    PRODUCT_SOLD_OUT = "PRODUCT_SOLD_OUT"
+    """
+    Represents product sold out.
+    """
+    CART_PRODUCTS_SOLD_OUT = "CART_PRODUCTS_SOLD_OUT"
+    """
+    Represents cart product sold out.
+    """

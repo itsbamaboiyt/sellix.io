@@ -6,7 +6,16 @@ from ..enums.caller import (
     DefaultSort,
     OrderOrigin, 
     OrderSubtype, 
-    OrderType
+    OrderType,
+    ProductType,
+    Gateway,
+    Blockchain,
+    StripeAPM,
+    Status,
+    STAT_DETAILS,
+    VOID_DETAILS
+
+
 )
 from ..enums.checkables import (
     DisplayTaxOnStorefront,
@@ -41,10 +50,12 @@ from ..enums.checkables import (
     SetupWizard,
     SetupCryptocurrencies,
     MarketplaceVerified,
+    DarkMode
 )
 
 
 import msgspec
+import typing as t
 
 
 class Shop(
@@ -411,82 +422,166 @@ class Order(msgspec.Struct):
     cloudflare_image_id: str
     """New field containing the cloudflare image ID of this product."""
     name: str
+    """Name of the merchant."""
     customer_email: str
+    """Email of the customer."""
     customer_id: str
+    """ID of the customer."""
     affliate_revenue_customer_id: str
+    """ID of the affiliate"""
     paypal_email_delivery: bool
+    """If true and gateway is PAYPAL, the product will be shipped to the PayPal email 
+    on record instead of the customer email."""
     product_id: str
+    """Unique ID of the product linked to this invoice, if any."""
     product_title: str
-    product_type: str
+    """Product title."""
+    product_type: ProductType
+    """Product type."""
     subscription_id: int
+    """Field reserved for Sellix-own plans. Unique ID of the subscription purchased."""
+
     subscription_time: int
-    gateway: str
-    blockchain: str
+    """Field reserved for Sellix-own plans. Time, in seconds, of the subscription purchased."""
+    gateway: Gateway
+    """Gateway chosen for this invoice. """
+    blockchain: Blockchain
+    """The blockchain of the crypto currency."""
     paypal_apm: str
-    stripe_apm: str
+    """PayPal Alternative Payment Method name, such as iDEAL, used if gateway is PAYPAL."""
+    stripe_apm: StripeAPM
+    """Stripe Alternative Payment Method name, such as iDEAL, used if gateway is STRIPE."""
     paypal_email: str
+    """Merchant PayPal email"""
+
     paypal_order_id: str
+    """This field contains the PayPal order ID."""
+
     paypal_payer_email: str
+    """This field is updated after the invoice is completed with the PayPal's email used for the purchase."""
     paypal_fee: int
+    """This field is updated after the invoice is completed with the fee taken by PayPal over the invoice total."""
     paypal_subscription_id: int
+    """ID of the paypal subscription."""
     paypal_subscription_link: int
+    """Link for the merchant to purchase the subscription from."""
     lex_order_id: str
+    """DEPRECATED"""
     lex_payment_method: str
+    """DEPRECATED"""
     paydash_paymentID: str
+    """DEPRECATED"""
     virtual_payments_id: str
+    """DEPRECATED"""
     stripe_client_secret: str
+    """Client secret used to create the STRIPE paymentIntent."""
     stripe_price_id: str
+    """If the invoice type is PRODUCT_SUBSCRIPTION or SUBSCRIPTION, refers to the STRIPE price ID."""
     skrill_email: str
+    """Merchant Skrill email."""
     skrill_sid: str
+    """Skrill unique ID linked to the invoice."""
     skrill_link: str
+    """Skrill link to redirect the customer to."""
     perfectmoney_id: str
+    """PerfectMoney payment ID linked to the invoice."""
     binance_invoice_id: str
+    """ID for binance invoice"""
     binance_qrcode: str
+    """Full Binance QRCODE string"""
     binance_checkout_url: str
+    """Checkout URL for Binance invoice"""
     crypto_address: str
+    """Cryptocurrency address linked to this invoice."""
     crypto_amount: float
+    """Cryptocurrency amount converted based on crypto_exchange_rate."""
     crypto_received: float
+    """Cryptocurrency amount received, paid by the customer."""
     crypto_uri: str
+    """URI used to create the QRCODE."""
     crypto_confirmations_needed: int
+    """Crypto confirmations needed to process the invoice"""
     crypto_scheduled_payout: bool
+    """If true, a scheduled payout for this invoice's cryptocurrency address has been sent."""
     crypto_payout: bool
+    """If true, an instant payout for this invoice's cryptocurrency address has been sent."""
     fee_billed: bool
+    """If true, the Sellix fee_percentage has already been collected."""
     cashapp_qrcode: str
+    """Full CashApp QRCODE string."""
     cashapp_note: str
+    """Unique note for the customer to leave in the CashApp payment."""
     cashapp_cashtag: str
+    """CashApp cashtag used to create the QRCODE."""
     country: str
+    """Customer country."""
     location: str
+    """Customer location"""
     ip: str
+    """Customer IP."""
     is_vpn_or_proxy: bool
+    """If true, a VPN or Proxy has been detected."""
     user_agent: str
+    """Customer User Agent."""
     quantity: int
+    """Qauntity of product purchased."""
     coupon_id: str
+    """Unique ID of the coupon, if used, for the discount."""
     developer_invoice: bool
+    """If true, this invoice has been created through the Developers API."""
     developer_title: str
+    """If a product_id is not passed through the Developers API, a title must be specified."""
     developer_webhook: str
+    """Additional webhook URL to which updates regarding this invoice will be sent."""
     developer_return_url: str
+    """If present, the customer will be redirected to this URL after the invoice has been paid."""
     status: str
-    status_details: str
-    void_details: str
+    """Status of the invoice."""
+    status_details: STAT_DETAILS
+    """If CART_PARTIAL_OUT_OF_STOCK, the invoice has been completed but some products in the cart were out of stock."""
+    void_details: VOID_DETAILS
+    """"""
     discount: int
-    fee_percentage: int
+    """If a coupon or volume_discount is used, the discount value presents the total amount of discount over the total cost of the invoice."""
+    fee_percentage: int 
+    """What cut does Sellix take out of the total."""
     day_value: int
+    """DEPRECATED: Day value, number."""
     day: str
+    """DEPRECATED: First three letters of the day name."""
     month: str
+    """DEPRECATED: First three letters of the month name."""
     year: int
+    """DEPRECATED: Year number."""
     created_at: int
+    """Timestamp for the creation of the invoice."""
     updated_at: int
+    """Date, available if the blacklist has been edited."""
     updated_by: int
+    """User ID of the user who updated the invoice."""
     service_text: str
+    """If the product type is SERVICE, this field contains additional details on the type of service provided by the merchant."""
     payment_link_id: str
+    """The ID for the payment link, if invoice was created by a payment link"""
     cashapp_email_configured: bool
+    """Whether or not cashapp email is configured"""
     license: bool
-    total_conversions: str
+    """True if the product is of type LICENSE"""
+    total_conversions: t.Any
+    """"""
     theme: str
+    """What Sellix theme the shop is set to."""
     dark_mode: int
-    crypto_mode: str
+    """1 if darkmode is enabled, 0 if it is disabled."""
+    crypto_mode: t.Any
+    """"""
     country_regulations: str
+    """The country the shop is opperated in"""
     shop_paypal_credit_card: bool
+    """If true, the merchant has enabled purchase with Credit Card through PayPal."""
     shop_force_paypal_email_delivery: bool
-    shop_walletconnect_id: str
+    """If true, the merchant has enabled invoice shipment to the PayPal customer email."""
+    shop_walletconnect_id: t.Any
+    """"""
     original_developer_return_url: str
+    """The original return url of the order."""

@@ -1,4 +1,4 @@
-from sellix.abc.generalobj import Shop
+from sellix.abc.modals import Shop
 import msgspec
 import pathlib
 
